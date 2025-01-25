@@ -1,0 +1,11 @@
+.unread-notifications {
+  color: #1D9BF0;
+}
+
+#notificationsLink.has-unread-notifications {
+  color: #1D9BF0;
+}
+
+.has-unread-notifications {
+  color: #1D9BF0;
+}

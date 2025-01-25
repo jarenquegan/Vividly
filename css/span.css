@@ -1,0 +1,23 @@
+.spanspan {
+    flex-grow: 1;
+}
+
+.dashspan {
+    color: #ffffff;
+}
+
+.dashspan:hover {
+    color: #4FA4F7;
+    ;
+}
+
+.result-container {
+    margin-top: 40px;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 408px) {
+    .result-container {
+        margin-top: 5rem !important;
+    }
+}

@@ -1,0 +1,30 @@
+.creator-img {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.creator-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.note {
+    text-align: center;
+    font-style: italic;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}

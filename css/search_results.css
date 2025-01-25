@@ -1,0 +1,277 @@
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating i {
+    font-size: 16px;
+}
+
+.artwork-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.poster {
+    position: relative;
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+}
+
+.poster img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.poster:hover img {
+    transform: scale(1.1);
+}
+
+.artwork-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.artwork-details h3 {
+    margin-top: 0;
+}
+
+.artwork-details p {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.artwork-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+.no-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.no-results p {
+    margin-bottom: 20px;
+}
+
+.no-results i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.no-results i:hover {
+    transform: scale(1.2);
+    color: var(--hover-color);
+}
+
+.search-box button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
+    align-self: center;
+}
+
+.read:hover {
+    color: #1D9BF0;
+    transform: translateY(-2px);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Large screens */
+@media (max-width: 1170px) {
+    .poster {
+        position: relative;
+        width: 100%;
+        height: 225px;
+        overflow: hidden;
+    }
+
+    .poster img {
+        width: 150px;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 1060px) {
+    .poster {
+        height: 195px;
+    }
+
+    .poster img {
+        width: 130px;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 991px) {
+    .poster {
+        height: 165px;
+    }
+
+    .poster img {
+        width: 110px;
+    }
+
+    .rating i {
+        font-size: 14px;
+    }
+
+    .artwork-details p {
+        font-size: 14px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 888px) {
+    .poster {
+        height: 150px;
+    }
+
+    .poster img {
+        width: 100px;
+    }
+
+    .rating i {
+        font-size: 14px;
+    }
+
+    .artwork-details p {
+        font-size: 14px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .poster {
+        height: 135px;
+    }
+
+    .poster img {
+        width: 90px;
+    }
+
+    .artwork-item {
+        grid-gap: 10px;
+    }
+
+    .rating i {
+        font-size: 12px;
+    }
+
+    .artwork-details p {
+        font-size: 12px;
+    }
+
+    .plot-container {
+        display: none;
+    }
+
+    .no-results i {
+        font-size: 36px;
+    }
+
+    .tooltip .tooltip-text {
+        width: 160px;
+        font-size: 12px;
+        padding: 4px;
+        bottom: 110%;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 514px) {
+
+    .poster {
+        height: 120px;
+    }
+
+    .poster img {
+        width: 80px;
+    }
+
+    .artwork-details h3 {
+        font-size: 16px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 370px) {
+    .poster {
+        height: 112.5px;
+    }
+
+    .poster img {
+        width: 75px;
+    }
+
+    .artwork-item {
+        grid-gap: 5px;
+    }
+
+    .artwork-details h3 {
+        font-size: 14px;
+    }
+
+    .artwork-details p {
+        font-size: 10px;
+    }
+
+    .no-results i {
+        font-size: 24px;
+    }
+
+    .tooltip .tooltip-text {
+        width: 120px;
+        font-size: 10px;
+        padding: 3px;
+        bottom: 90%;
+    }
+}

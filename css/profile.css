@@ -1,0 +1,11 @@
+.profile-img {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

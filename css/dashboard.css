@@ -1,0 +1,44 @@
+.spanspan {
+    flex-grow: 1;
+}
+
+.dashspan {
+    color: #ffffff;
+}
+
+.dashspan:hover {
+    color: #1D9BF0;
+}
+
+.result-container {
+    margin-top: 40px;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 408px) {
+    .result-container {
+        margin-top: 5rem !important;
+    }
+}
+
+
+.image-preview {
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+}
+
+.image-preview img {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    height: 135px;
+    width: 240px;
+    object-fit: cover;
+}
+
+.image-preview:hover img {
+    display: block;
+}

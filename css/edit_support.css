@@ -1,0 +1,175 @@
+.artwork-image {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.artwork-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.artwork-image {
+    max-width: 600px;
+    width: 100%;
+    height: 337.5px;
+    background: var(--body-color);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 0.4rem;
+}
+
+.artwork-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width:408px) {
+    .artwork-image {
+        width: 100%;
+        height: 210px;
+    }
+
+    .artwork-image img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.qr-img {
+    width: 180px;
+    height: 180px;
+    background: var(--body-color);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.qr-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width:408px) {
+    .qr-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .qr-img img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+.note {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Hide the checkboxes */
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the labels to appear as checkboxes */
+.option-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    row-gap: 15px;
+}
+
+.option {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    flex-basis: calc(25% - 10px);
+}
+
+.option-cast {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    flex-basis: calc(33.3333333333% - 10px);
+}
+
+.option-rad {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    flex-basis: calc(16.6666666667% - 10px);
+}
+
+/* Style the labels when the checkbox is checked */
+input[type="checkbox"]:checked+label,
+input[type="radio"]:checked+label {
+    background-color: var(--main-color);
+}
+
+.option:hover,
+.option-cast:hover,
+.option-rad:hover {
+    background: var(--hover-color);
+    transition: 0.3s all linear;
+    cursor: pointer;
+}
+
+.option-container .expanddd {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    background: var(--box-color);
+    cursor: pointer;
+}
+
+.option-container .expanddd:hover {
+    background: var(--hover-color);
+    transition: 0.3s all linear;
+}
+
+.hidden-checkbox.hidden {
+    display: none;
+}
+
+.hidden-label.hidden {
+    display: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
