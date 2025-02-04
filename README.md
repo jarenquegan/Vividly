@@ -19,11 +19,4 @@ Vividly is a social networking platform dedicated to visual arts. It provides a 
 - PHP and PHPMyAdmin for backend and database management
 - Google Forms for surveys and questionnaires
 
-## Requirement Elicitation Techniques
-- Surveys and Questionnaires
-- Prototyping
-- Brainstorming Sessions
-- Focus Groups
-- Document Analysis
-- Observation
 
